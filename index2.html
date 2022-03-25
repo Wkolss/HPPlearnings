@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Project Deva & Ken</title>
+    
+  </head>
+  <body>
+    <!-- Nav  -->
+
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h5 class="text-white h4">Selamat Datang Diproject Kami</h5>
+          <span class="text-muted">Ingin membaca dengan Offline ? Klik Download dibawah ini</span><br><br>
+            <button id="bt" type="button" class="btn btn-primary btn-lg">Download</button>
+          <p style="color: white" id="pa"></p>
+          <br>
+          <span class="text-white">@Created By Deva & Ken</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Nav tails -->
+
+      <div class="container">
+          <div class="row">
+              <div class="col text-center bg-primary bg-gradient text-light">
+                  <h2>Daftar Isi</h2>
+              </div>
+          </div>
+
+          <div class="row bg-light bg-gradient">
+            <div class="offset-1 col">
+                  <ul>
+                      <li><a href="#fifo">FIFO</a></li>
+                      <ul>
+                          <li><a href="#fipe">Sistem Periodik</a></li>
+                          <li><a href="#fiper">Sistem Perpetual</a></li>
+                      </ul>
+                  </ul>
+            </div>
+
+            <div class="col">
+                <ul>
+                    <li><a href="#lifo">LIFO</a></li>
+                    <ul>
+                        <li><a href="#life">Sistem Periodik</a></li>
+                        <li><a href="#lifer">Sistem Perpetual</a></li>
+                    </ul>
+                </ul>
+            </div>
+          </div> <!--Div ini adalah akhir Row ke-2-->
+
+          <div class="row bg-light bg-gradient">
+              <div class="offset-1 col">
+                  <ul>
+                      <li><a href="#rat">Rata Rata</a></li>
+                      <ul>
+                          <li><a href="#ratpe">Sistem Periodik</a></li>
+                          <li><a href="#ratper">Sistem Perpetual</a></li>
+                      </ul>
+                  </ul>
+              </div>
+          </div>
+      </div><br>
+
+      <h3 id="fifo">Pengertian FIFO</h3>
+      <img src="data:image/jpeg;base64,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"/>
+      <p style="margin-left: 5px">FIFO / First In First Out merupakan metode pengelolaan untuk menjual barang yang pertama masuk sebagai barang yang keluar pertama kali</p>
+     
+      <!-- Cardio -->
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" id="fipe" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Sistem Periodik
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                  <li>Sistem ini hanya mencatat <strong>Persediaan Awal, Pembelian, </strong> dan <strong>Persediaan Akhir</strong></li>
+                  <ul>
+                      <li>Jika ada <strong>Persediaan Akhir</strong> maka unit yang tersisa terhitung dari <strong>Pembelian</strong> di tanggal terakhir</li>
+                  </ul>
+                  <li>Jika <strong>Pembelian</strong> di tanggal terakhir kurang dari <strong>Persedian Akhir </strong> maka unit yang tersisa menggunakan <strong>Pembelian ke-2 / lebih </strong>dari terakhir</li>
+                  <ul>
+                      <li>Sistem ini mencatat <strong>Persediaan Akhir</strong> dari <strong>Pembelian</strong> Terakhir karena <strong>Pembelian</strong> di awal telah terjual</li>
+                  </ul>
+             </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" id="fiper" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Sistem Perpetual
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <ul>
+                 <li>Sistem ini mencatat semua <strong>Persediaan Awal, Pembelian, Penjualan, dan Persediaan Akhir</strong></li>
+                 <ul>
+                     <li>Saat Terjadi <strong>Penjualan</strong> maka unit yang terpakai adalah <strong>Persediaan Awal</strong></li>
+                 </ul>
+                 <li>Jika <strong>Persediaan Awal</strong> telah habis maka memakai unit dari <strong>Pembelian</strong> yang terpakai adalah <strong>Persediaan Awal</strong></li>
+                 <ul>
+                     <li>Sistem ini mencatat <strong>Penjualan</strong> dari <strong>Penjualan</strong> dari <strong>Pembelian</strong> pertama. <strong>Persediaan Akhir</strong> terhitung dari sisa <strong>Pembelian</strong> yang belum terjual</li>
+                 </ul>
+             </ul>
+            </div>
+          </div>
+        </div>
+        <br><br><br>
+      <!-- Cardio Tails -->
+
+    
+      <h3 id="lifo">Pengertian LIFO</h3><br>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgKHdCevmcPvghqSRjenU7-KVysiKj34sDSw&usqp=CAU" class="mx-3" width="210"/>
+      <br><br>
+      <p style="margin-left: 5px">LIFO / Last In First Out merupakan barang yang terakhir masuk adalah barang yang pertama kali keluar. Barang yang tidak memiliki masa waktu biasanya menggunakan metode LIFO ,dan metode ini merupakan kebalikan dari FIFO</p>
+      <!--Cardio Num-2 -->
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" id="life" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Sistem Periodik
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <strong>Persediaan Akhir</strong> dihitung daari <strong>Persediaan Awal</strong> dan <strong>Pembeli Pertama</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" id="lifer" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Sistem Perpetual
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <strong>Penjualan</strong> di hitung dari <strong>Pembelian terakhir</strong>
+              <br><br>
+              Pencatatan bersifat penimbunan jika terdapat <strong>Penjualan</strong> maka akan digunakan barang yang baru di <strong>Beli</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <!-- Cardio tails -->
+
+      <!-- Rata rata -->
+      <h3 id="rat">Rata rata (Nilai Tengah)</h3>
+      <br>
+
+      <div class="border border-secondary mx-2" style="width: 200px; padding-top: 10px; padding-bottom: 10px; padding-left: 5px; padding-right: 5px">
+         <p style="position: absolute; margin-left: 60px; margin-top: -8px">Persediaan</p>
+         <span style="display: flex"> =  <hr style="width: 180px; color: black; margin-left: 5px"></span>
+         <p style="position: absolute; margin-left: 73px; margin-top: -17px">Jumlah</p>
+     </div>
+
+      <br>
+      <p style="margin-left: 5px">Jika terjadi pembelian dengan harga baru</p>
+      <div class="border border-secondary mx-2" style="width: 300px; padding-top: 10px; padding-bottom: 37px">
+          <div class="box1 text-center" style="position: absolute; display: flex; margin-top: -12px; margin-left: 28px">
+              <span>Barang Lama <p style="font-size: 18px">(Unit x Harga)</p> </span> <p style="font-size: 25px"> + </p> <span>Barang Baru <p style="font-size: 18px">(Unit x Harga)</p> </span>
+          </div>
+          <br>
+         <span style="display: flex; margin-left: 5px"> = <hr style="width: 300px; margin-left: 5px"> </span>
+         <div class="box2 text-center" style="position: absolute; margin-top: -17px; margin-left: 99px">
+             <span style="font-size: 20px">Total Unit <p style="font-size: 16px">(Lama + Baru)</p></span>
+         </div>
+  </div>
+  <br><br>
+
+  <h3 id="ratpe">Sistem Periodik</h3>
+  <h5>( Persediaan barang dagang yang tersedia untuk dijual )</h5>
+  <p style="margin-left: 5px">Persediaan Akhir di hitung dari dari <strong>Total Pembelian + Persedian Awal / Jumlah Total Barang</strong></p>
+
+  <br>
+  <h3 id="ratper">Sistem Perpetual</h3>
+  <h5>( Jumlah barang dagang yang tersedia untuk dijual )</h5>
+  <p style="margin-left: 5px">Setiap terjadi <strong>Pembelian</strong> maka akan dilakukan perhitungan harga rata rata.</p>
+  <p style="margin-left: 5px">Penjualan dilakukan dengan total unit dan harga rata-rata.</p>
+
+      <!-- Rata rata tails -->
+
+      <div class="card text-dark bg-light mb-3 mx-auto" style="width: 390px">
+        <div class="card-header">Perhitungan HPP</div>
+        <div class="card-body">
+          <p class="card-text">Persediaan barang dagangan yang tersedia untuk dijual ( Total harga dari setiap pembelian + persediaan awal x unit ) </p>
+          <h5 class="card-title text-center">Dikurang</h5>
+          <p class="card-text text-center">Persediaan barang dengan dagangan akhir</p>
+        </div>
+      </div>
+
+      <div class="box bg-dark text-center" style="width: auto; min-height: 90px">
+        <h2 class="text-center text-white fw-bold">Created By Deva & Ken</h2>
+        <span class="text-muted text-center"><img src="https://www.iconsdb.com/icons/preview/white/copyright-xl.png" width="20"> 2022 Ken&Dev, Jakarta</span>
+    </div>
+
+     <script>
+         const bt = document.querySelector("#bt");
+         const pa = document.querySelector("#pa");
+         let i = 6;
+         bt.addEventListener('click', () => {
+             bt.style.display = "none";
+             const ini = setInterval(hel, 1000);
+
+             function hel() {
+                 i--;
+                 pa.innerHTML = `Terima kasih telah mengunduh project kami !! Diunduh otomatis dalam ${i} detik`;
+                 if(i === 0 ) {
+                     clearInterval(ini);
+                     window.location.href = "Metode Persediaan.pptx";
+                     pa.innerHTML = '<a href="Metode Persediaan.pptx">Apakah ingin mengulang pengunduhan ? </a>'
+                 }
+             }
+         })
+         
+
+      </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
