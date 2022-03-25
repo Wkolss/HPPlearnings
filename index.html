@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <input type="text" id="input" maxlength="15"/><span id="ma"></span><br><br>
+    <button id="tombol">Tambahkan</button><span id="pi"></span>
+    <table id="table" border="1" cellpadding="10" cellspacing="0"></table>
+    
+
+    <script>
+        const tombol = document.querySelector("#tombol");
+        const p = document.querySelector("p");
+        const inpu = document.querySelector("#input");
+        const span = document.querySelector("#ma");
+        const span2 = document.querySelector("#pi");
+
+        // AddEventListener List
+        tombol.addEventListener('click', oke);
+        inpu.addEventListener('keyup', (e) => {
+            if(e.which === 13) {
+                oke();
+            }
+            span.innerHTML = inpu.value.length + "/15";
+        })
+        inpu.addEventListener('input', papa);
+        // end addEventListener List
+
+    
+        span.style.display = "none";
+
+        let i = 0;
+        function oke() {
+            const input = document.querySelector("#input");
+            const table = document.querySelector("#table");
+            if(input.value === '' || input.value === ' ' || input.value === '  ' ||  input.value === '   ' || input.value === '    ' || input.value === '     ' || input.value === '      ' || input.value === '       ' || input.value === '        ' || input.value === '         ' || input.value === '          ' || input.value === '           ' || input.value === '            ' || input.value === '             ' || input.value === '              ' || input.value === '               ') {
+                alert("Tidak bisa menerima data");
+            } else{
+               
+                i++;
+                table.innerHTML += `<tr>
+                    <td>${i}</td>
+                    <td>${input.value}</td>
+                    </tr>`;
+            }
+            input.value = "";
+            span2.innerHTML = "Total : " + i ;
+        }
+
+       
+        function papa() {
+            span.innerHTML = inpu.value.length + "/15";
+            span.style.display = "inline";
+        }
+    </script>
+</body>
+</html>
